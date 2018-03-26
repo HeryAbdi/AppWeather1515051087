@@ -20,7 +20,7 @@ export default class App extends React.Component {
     fetch (url)
     .then((response) => response.json())
     .then((responseJson) => {
-      //console.log(responseJson);
+      
       this.setState({
         forecast: {
           main: responseJson.weather[0].main,
@@ -118,14 +118,13 @@ const styles = StyleSheet.create({
     flex: 3,
     flexDirection: 'column',
     justifyContent: 'space-around',
-    // alignItems: 'center',
     marginTop: 10,
     marginLeft: 10,
     marginRight: 10,
     marginBottom: 10
   },
 
-  box4: {//box detail tampil
+  box4: {
     backgroundColor: '#ECEFF1',
     flex: 1,
     flexDirection: 'column',
